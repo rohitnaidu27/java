@@ -10,7 +10,7 @@ static	 String insertSQL= "insert into test.product(id,name,price,description,qu
 	public static void add(Product product) {
 		try {
 			
-		Connection connection= 	DriverManager.getConnection("jdbc:mysql//localhost:3306/test", "root","Qwerty@123");
+		Connection connection= 	DriverManager.getConnection("jdbc:mysql//localhost:3306/test", "root","root");
 	
 		PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
 		
